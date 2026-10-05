@@ -123,3 +123,65 @@ NOTE:Template literals are especially useful for string interpolation and multi-
 
 31. Find the character with the first highest frequency
 "mississippi" → "i"
+
+
+# Array inbuilt methods
+
+1. length --- it returns how many values present in an array.
+# edit
+2. push() ---- it adds an element in the last index.
+3. pop()----- it removes an element in the last index
+4. unshif()---- it adds an element in the first index.
+5. shift()---- it removes an element in the first index.
+6. splice()---- it can remove or add the element at a time in any index position.
+
+# Search / Check
+7. indexOf() — it returns the index position of an element.
+
+8. lastIndexOf() — it returns the last index position of an element.
+
+9. includes() — it checks whether an element is present in an array.
+
+10. find() — it returns the first element that satisfies a condition.
+
+11. findLast() — it returns the last element that satisfies a condition.
+
+# Add / Remove / Convert
+12. concat() — it joins two or more arrays and returns a new array.
+
+13. slice() — it copies a portion of an array into a new array without changing the original array.
+
+14. join() — it converts all array elements into a string and joins them with a separator.
+
+15. flat() — it converts nested arrays into a single-level array.
+
+16. flatMap() — it maps each element and then flattens the result.
+
+# Loop / Iterate
+17. forEach() — it executes a function for each element in an array.
+18. map() — it creates a new array by changing each element.
+19. filter() — it creates a new array containing elements that satisfy a condition.
+20. reduce() — it reduces all array elements to a single value.
+21. reduceRight() — it reduces all array elements to a single value from right to left.
+22. some() — it checks whether at least one element satisfies a condition.
+23. every() — it checks whether all elements satisfy a condition.
+
+# Sorting / Reversing
+24. sort() — it sorts the elements of an array.
+
+25. reverse() — it reverses the order of elements in an array.
+
+26. toSorted() — it returns a new sorted array without changing the original array.
+
+27. toReversed() — it returns a new reversed array without changing the original array.
+
+# special methods
+28. at() — it returns the element at a specified index; it can also access elements from the end using negative indexes.
+29. toString() — it converts an array into a string.
+
+# Array static methods
+30. Array.isArray() — it checks whether a value is an array.
+
+31. Array.from() — it creates an array from an iterable or array-like object.
+
+32. Array.of() — it creates a new array from the given values.
