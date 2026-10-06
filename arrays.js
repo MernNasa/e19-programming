@@ -52,7 +52,7 @@
 // console.log(arr.flat(Infinity))
 
 
-let arr=[1,2,3,4,5]
+// let arr=[1,2,3,4,5]
 
 // let res=arr.forEach((ele,index,array)=>ele*2)
 // let res=arr.map((ele,index,array)=>ele*2)
@@ -66,7 +66,78 @@ let arr=[1,2,3,4,5]
 // let res= arr.reduceRight((acc,ele)=>acc+ele)
 // console.log(res);
 
-let res=arr.some((ele)=>ele>4)
-let res1=arr.every((ele)=>ele>0)
-console.log(res);
-console.log(res1);
+// let res=arr.some((ele)=>ele>4)
+// let res1=arr.every((ele)=>ele>0)
+// console.log(res);
+// console.log(res1);
+
+
+// let arr=[3,5,6,1,2,8,9,4,7]
+
+// arr.sort((a,b)=>a-b)
+// let ascendingArray=arr.toSorted((a,b)=>a-b)
+// arr.reverse()
+// let reverseArray=arr.toReversed()
+// console.log(arr);
+// console.log(reverseArray);
+
+// console.log(ascendingArray);
+
+// let arr=['a','b','c',23]
+
+// console.log(arr[-1]);
+// console.log(arr.at(-1));
+// console.log(arr.toString(2));
+
+
+// console.log(Array.isArray(arr));
+
+// let str="abcdefg"
+// console.log(Array.from(str));
+
+// console.log(Array.of(str));
+
+
+
+//! 1. find largest element in an array
+
+// function findLargestElement(arr){
+//     let largest=arr[0]
+//     for(let i=1;i<arr.length;i++){
+//         if(arr[i]>largest){
+//             largest=arr[i]
+//         }
+//     }
+//     console.log(largest);
+// }
+// findLargestElement([1,2,3,4,5,23,34,10])
+
+//! find smallest element in an array
+
+
+// function findSmallestElement(arr){
+//     let smallest=arr[0]
+//     for(let i=1;i<arr.length;i++){
+//         if(arr[i]<smallest){
+//             smallest=arr[i]
+//         }
+//     }
+//     console.log(smallest);
+// }
+// findSmallestElement([1,2,3,4,5,23,34,-10])
+
+//! find the search element index
+
+function searchElementIndex(arr,target){
+    let index=-1
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]===target){
+            index=i
+            break;
+        }
+    }
+
+    index>=0?console.log("element is fount in "+ index):console.log("element not fount");
+}
+
+searchElementIndex([1,2,3,4,5,6,7],1)
