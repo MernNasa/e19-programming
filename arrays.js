@@ -128,16 +128,51 @@
 
 //! find the search element index
 
-function searchElementIndex(arr,target){
-    let index=-1
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]===target){
-            index=i
-            break;
+// function searchElementIndex(arr,target){
+//     let index=-1
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]===target){
+//             index=i
+//             break;
+//         }
+//     }
+
+//     index>=0?console.log("element is fount in "+ index):console.log("element not fount");
+// }
+
+// searchElementIndex([1,2,3,4,5,6,7],1)
+
+
+
+// function reverseArray(arr){
+//     let start=0,end=arr.length-1
+//     while(start<end){
+//         let temp=arr[start]
+//         arr[start]=arr[end]
+//         arr[end]=temp
+//         start++
+//         end--
+//     }
+//     return arr
+// }
+
+// console.log(reverseArray([1,2,3,4,5]));
+
+
+function findSecondLargestElement(arr){
+
+    let largest=arr[0]
+    let secondLargest=-Infinity
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]>largest){
+            secondLargest=largest
+            largest=arr[i]  
+        }
+        else if(arr[i]>secondLargest && arr[i]!==largest){
+            secondLargest=arr[i]
         }
     }
-
-    index>=0?console.log("element is fount in "+ index):console.log("element not fount");
+    console.log(secondLargest);
 }
 
-searchElementIndex([1,2,3,4,5,6,7],1)
+findSecondLargestElement([1,2,3,4,5])

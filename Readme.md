@@ -324,3 +324,35 @@ Example:
 Input: Array = {10, 5, 20, 15, 7} Target = 22
 
 Output: 15 + 7 = 22
+
+
+
+
+# What is Recursion?
+Recursion is when a function calls itself to solve a smaller version of the same problem.
+
+Every recursive function should have two important parts:
+
+Base case — tells the function when to stop.
+Recursive case — the function calls itself with a smaller/simpler input.
+
+# 🟢 Level 1 — Basic Recursion
+1. Print numbers from 1 to N
+2. Print numbers from N to 1
+3. Find the sum of numbers from 1 to N
+4. Find factorial of N
+5. Calculate a number raised to a power.Don't use Math.pow() or **.
+
+6. Count the number of digits
+# 🟡 Level 2 — Easy
+7. Find the sum of digits
+8. Reverse a string
+9. Check if a string is a palindrome
+10. Find the maximum number in an array
+11. Count occurrences of a number
+12. Find the first occurrence of an element
+# 🟠 Level 3 — Medium
+13. Fibonacci number.Write a recursive function to find the Nth Fibonacci number.
+14. Greatest Common Divisor (GCD).Use recursion to implement Euclid's algorithm.
+15. Flatten a nested array
+16. Count vowels recursively
